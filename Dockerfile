@@ -10,7 +10,7 @@ RUN pip install -r ./requirements.txt
 
 # Add an alias (just for convenience)
 # Just run "flet" instead of "python3 flet"
-RUN alias flet="python3 /app/bin/flet"
+RUN echo "alias flet='python3 /app/bin/flet'" >> ~/.bashrc
 
 # Open terminal
 CMD ["bash"]
