@@ -15,7 +15,7 @@ If you are a Linux or a Macos user just add flet-cli to Your .zshrc or .bashrc f
 ```
 
 ```console
-~$ vim .bashrc # For zshrc default shell
+~$ vim .bashrc # For bashrc default shell
 ```
 
 Add Autotype to your PATH in your .zshrc or .bashrc file 
@@ -26,4 +26,10 @@ export PATH="$PATH:path of flet-cli/bin"
 Restart the terminal
 ```console
 ~$ flet --help
+```
+
+Commands to run on Docker
+```console
+docker build -t flet-cli .
+docker run -it -p 8550:8550 flet-cli
 ```
